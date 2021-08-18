@@ -52,3 +52,20 @@ li:hover {
   opacity: 0;
   text-align: left;
 }
+
+/* Window */
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #0076fd;
+  color: #fff;
+}
