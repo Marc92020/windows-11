@@ -44,4 +44,5 @@ li:hover {
   border-radius: 20px;
   transition: .5s;
   opacity: 0;
+  text-align: left;
 }
