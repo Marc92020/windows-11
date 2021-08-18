@@ -26,3 +26,19 @@ li:hover {
     background-color: rgb(255, 255, 255, 0.8);
     cursor: pointer;
 }
+
+/* Start menu */
+.start {
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.884);
+  bottom: -545px;
+  width: 100%;
+  margin: 0 auto;
+  height: 550px;
+  width: 550px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  border-radius: 20px;
+}
