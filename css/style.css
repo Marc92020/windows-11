@@ -23,6 +23,6 @@ li {
 }
 
 li:hover {
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255, 0.8);
     cursor: pointer;
 }
