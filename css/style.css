@@ -1,24 +1,20 @@
-body {
-  margin: 0px;
-  background-image: url("../wallpaper.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
+  background-color: rgb(247, 247, 247, 0.3);
 }
 
 li {
-	display: inline-block;
+    display: inline-block;
+    padding: 7px;
+}
+
+li:hover {
+    background-color: #ffffff;
+    cursor: pointer;
 }
