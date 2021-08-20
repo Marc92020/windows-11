@@ -1,6 +1,6 @@
 fetch('info.txt')
   .then(response => response.text())
-  .then(data => document.getElementById("mydiv").insertAdjacentHTML("beforeEnd", data.replace("\n", "<br>")));
+  .then(data => document.getElementById("mydiv").insertAdjacentHTML("beforeEnd", data.replaceAll("\n", "<br>")));
 
 //Make the DIV element draggagle:
 dragElement(document.getElementById("mydiv"));
