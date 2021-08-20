@@ -5,6 +5,10 @@ fetch('info.txt')
 //Make the DIV element draggagle:
 dragElement(document.getElementById("mydiv"));
 
+function closediv() {
+document.getElementById("mydiv").remove();
+}
+
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
