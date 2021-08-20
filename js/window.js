@@ -6,7 +6,7 @@ fetch('info.txt')
 dragElement(document.getElementById("mydiv"));
 
 function closediv() {
-document.getElementById("mydiv").remove();
+   document.getElementById("mydiv").style.opacity = 0;
 }
 
 document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
