@@ -27,6 +27,7 @@ document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
    },100)
    setTimeout(function(){
    document.getElementById("mydiv").style.transition = "0s";
+   document.getElementById("mydiv").style.display = "none";
    },200)
   }else{
    document.getElementById("mydiv").style.transition = ".2s";
@@ -34,6 +35,7 @@ document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
    
    setTimeout(function(){
    document.getElementById("mydiv").style.transition = "0s";
+   document.getElementById("mydiv").style.display = "block";
    },200)
   }
 });
@@ -48,6 +50,7 @@ function store9() {
    },100)
    setTimeout(function(){
    document.getElementById("mydiv2").style.transition = "0s";
+   document.getElementById("mydiv").style.display = "none";
    },200)
   }else{
    document.getElementById("mydiv2").style.transition = ".2s";
@@ -55,6 +58,7 @@ function store9() {
    
    setTimeout(function(){
    document.getElementById("mydiv2").style.transition = "0s";
+   document.getElementById("mydiv").style.display = "block";
    },200)
   }
 }
