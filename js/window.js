@@ -27,6 +27,7 @@ document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
    },100)
    setTimeout(function(){
    document.getElementById("mydiv").style.transition = "0s";
+   document.getElementById("mydiv").style.zIndex = 999;
    },200)
   }else{
    document.getElementById("mydiv").style.transition = ".2s";
@@ -34,6 +35,7 @@ document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
    
    setTimeout(function(){
    document.getElementById("mydiv").style.transition = "0s";
+   document.getElementById("mydiv").style.zIndex = 9999;
    },200)
   }
 });
@@ -48,6 +50,7 @@ function store9() {
    },100)
    setTimeout(function(){
    document.getElementById("mydiv2").style.transition = "0s";
+   document.getElementById("mydiv").style.zIndex = 999;
    },200)
   }else{
    document.getElementById("mydiv2").style.transition = ".2s";
@@ -55,6 +58,7 @@ function store9() {
    
    setTimeout(function(){
    document.getElementById("mydiv2").style.transition = "0s";
+   document.getElementById("mydiv").style.zIndex = 9999;
    },200)
   }
 }
@@ -70,7 +74,6 @@ function dragElement(elmnt) {
   }
 
   function dragMouseDown(e) {
-    if (document.getElementById(elmnt.id).style.opacity == 1){
     e = e || window.event;
     e.preventDefault();
     // get the mouse cursor position at startup:
@@ -79,9 +82,6 @@ function dragElement(elmnt) {
     document.onmouseup = closeDragElement;
     // call a function whenever the cursor moves:
     document.onmousemove = elementDrag;
-    }else{
-    console.log("Element cannot be dragged.")
-    }
   }
 
   function elementDrag(e) {
