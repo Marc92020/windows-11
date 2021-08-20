@@ -70,6 +70,7 @@ function dragElement(elmnt) {
   }
 
   function dragMouseDown(e) {
+    if (document.getElementById(elmnt.id).style.opacity == 1){
     e = e || window.event;
     e.preventDefault();
     // get the mouse cursor position at startup:
@@ -78,6 +79,9 @@ function dragElement(elmnt) {
     document.onmouseup = closeDragElement;
     // call a function whenever the cursor moves:
     document.onmousemove = elementDrag;
+    }else{
+    console.log("Element cannot be dragged.")
+    }
   }
 
   function elementDrag(e) {
@@ -89,10 +93,8 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     pos4 = e.clientY;
     // set the element's new position:
-    if (e.style.opacity == 1){
     elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-    }
   }
 
   function closeDragElement() {
