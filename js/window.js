@@ -12,7 +12,7 @@ function closediv() {
 document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
   if (document.getElementById("mydiv").style.opacity == 1){
    document.getElementById("mydiv").style.transition = ".2s";
-   document.getElementById("mydiv").style.opacity = 0;
+   document.getElementById("mydiv").style.opacity = ".7";
    
    setTimeout(function(){
    document.getElementById("mydiv").style.opacity = 1;
@@ -23,6 +23,10 @@ document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
   }else{
    document.getElementById("mydiv").style.transition = ".2s";
    document.getElementById("mydiv").style.opacity = 1;
+   
+   setTimeout(function(){
+   document.getElementById("mydiv").style.transition = "0s";
+   },200)
   }
 });
 
