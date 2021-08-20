@@ -9,6 +9,16 @@ function closediv() {
 document.getElementById("mydiv").remove();
 }
 
+document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
+  if (document.getElementById("mydiv").style.opacity == 1){
+   document.getElementById("mydiv").style.transition = "1s";
+   document.getElementById("mydiv").style.opacity = 0;
+  }else{
+   document.getElementById("mydiv").style.transition = ".2s";
+   document.getElementById("mydiv").style.opacity = 1;
+  }
+});
+
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
