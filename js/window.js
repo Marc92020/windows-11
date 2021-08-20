@@ -5,6 +5,7 @@ fetch('info.txt')
 //Make the DIV element draggagle:
 dragElement(document.getElementById("mydiv"));
 dragElement(document.getElementById("mydiv2"));
+dragElement(document.getElementById("mydiv3"));
 
 function closediv() {
    document.getElementById("mydiv").style.opacity = 0;
