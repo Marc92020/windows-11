@@ -4,9 +4,13 @@ fetch('info.txt')
 
 //Make the DIV element draggagle:
 dragElement(document.getElementById("mydiv"));
+dragElement(document.getElementById("mydiv2"));
 
 function closediv() {
    document.getElementById("mydiv").style.opacity = 0;
+}
+function closediv2() {
+   document.getElementById("mydiv2").style.opacity = 0;
 }
 
 document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
@@ -26,6 +30,27 @@ document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
    
    setTimeout(function(){
    document.getElementById("mydiv").style.transition = "0s";
+   },200)
+  }
+});
+
+document.getElementById("logostore_JMN0").addEventListener("click", function() {
+  if (document.getElementById("mydiv2").style.opacity == 1){
+   document.getElementById("mydiv2").style.transition = ".2s";
+   document.getElementById("mydiv2").style.opacity = ".7";
+   
+   setTimeout(function(){
+   document.getElementById("mydiv2").style.opacity = 1;
+   },100)
+   setTimeout(function(){
+   document.getElementById("mydiv2").style.transition = "0s";
+   },200)
+  }else{
+   document.getElementById("mydiv2").style.transition = ".2s";
+   document.getElementById("mydiv2").style.opacity = 1;
+   
+   setTimeout(function(){
+   document.getElementById("mydiv2").style.transition = "0s";
    },200)
   }
 });
