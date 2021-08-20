@@ -34,7 +34,7 @@ document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
   }
 });
 
-document.getElementById("logostore_JMN0").addEventListener("click", function() {
+function store9() {
   if (document.getElementById("mydiv2").style.opacity == 1){
    document.getElementById("mydiv2").style.transition = ".2s";
    document.getElementById("mydiv2").style.opacity = ".7";
@@ -53,7 +53,7 @@ document.getElementById("logostore_JMN0").addEventListener("click", function() {
    document.getElementById("mydiv2").style.transition = "0s";
    },200)
   }
-});
+}
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
