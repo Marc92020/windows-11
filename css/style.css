@@ -72,3 +72,8 @@ li:hover {
   background-color: #0076fd;
   color: #fff;
 }
+
+.clse-8A:hover {
+  background-color: red;
+  transition: 1s;
+}
