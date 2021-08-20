@@ -13,6 +13,9 @@ function closediv() {
 function closediv2() {
    document.getElementById("mydiv2").style.opacity = 0;
 }
+function closediv3() {
+   document.getElementById("mydiv3").style.opacity = 0;
+}
 
 document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
   if (document.getElementById("mydiv").style.opacity == 1){
