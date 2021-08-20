@@ -11,9 +11,6 @@ function closediv() {
 
 document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
   if (document.getElementById("mydiv").style.opacity == 1){
-   document.getElementById("mydiv").style.transition = "1s";
-   document.getElementById("mydiv").style.opacity = 0;
-  }else{
    document.getElementById("mydiv").style.transition = ".2s";
    document.getElementById("mydiv").style.opacity = 0;
    
@@ -23,6 +20,9 @@ document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
    setTimeout(function(){
    document.getElementById("mydiv").style.transition = "0s";
    },200)
+  }else{
+   document.getElementById("mydiv").style.transition = ".2s";
+   document.getElementById("mydiv").style.opacity = 1;
   }
 });
 
