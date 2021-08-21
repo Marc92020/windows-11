@@ -67,6 +67,8 @@ function store9() {
 }
 
 function dragElement(elmnt) {
+  console.log(elmnt)
+  
   elmnt.style.zLayer = highz + 1;
   highz = highz + 1;
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
