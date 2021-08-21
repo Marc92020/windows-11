@@ -1,3 +1,6 @@
+let highz;
+highz = 999;
+
 fetch('info.txt')
   .then(response => response.text())
   .then(data => document.getElementById("mydiv").insertAdjacentHTML("beforeEnd", `<div class="content">` + data.replaceAll("\n", "<br>")));
@@ -64,6 +67,8 @@ function store9() {
 }
 
 function dragElement(elmnt) {
+  elmnt.style.zLayer = highz + 1;
+  highz = highz + 1;
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
     /* if present, the header is where you move the DIV from:*/
