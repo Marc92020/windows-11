@@ -66,6 +66,10 @@ li:hover {
   text-align: left;
 }
 
+.content {
+  margin: 20px;
+}
+
 .headers {
   border-radius: 5px 5px 0px 0px;
   padding: 5px 5px 5px 10px;
