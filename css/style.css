@@ -60,7 +60,7 @@ li:hover {
   border-radius: 10px;
   position: absolute;
   z-index: 9;
-  background-color: rgb(241,241,241, .8);
+  background-color: rgb(241,241,241, .9);
   text-align: center;
   border: 1px solid #d3d3d3;
   text-align: left;
@@ -71,8 +71,8 @@ li:hover {
   padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: #0076fd;
-  color: #fff;
+  background-color: white;
+  color: black;
 }
 
 .clse-8A:hover {
