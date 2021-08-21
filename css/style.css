@@ -67,8 +67,8 @@ li:hover {
 }
 
 .headers {
-  border-radius: 10px 10px 0px 0px;
-  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  padding: 5px 5px 5px 10px;
   cursor: move;
   z-index: 10;
   background-color: white;
