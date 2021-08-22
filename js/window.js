@@ -10,15 +10,6 @@ dragElement(document.getElementById("mydiv"));
 dragElement(document.getElementById("mydiv2"));
 dragElement(document.getElementById("mydiv3"));
 
-function closeAll() {
-  document.getElementById("mydiv3").style.opacity = 0;
-  document.getElementById("mydiv2").style.opacity = 0;
-  document.getElementById("mydiv").style.opacity = 0;
-   document.getElementById("startmenu_MMIA").style.transition = "1s";
-   document.getElementById("startmenu_MMIA").style.zIndex = 0;
-   document.getElementById("startmenu_MMIA").style.opacity = 0;
-}
-
 function closediv() {
    document.getElementById("mydiv").style.opacity = 0;
 }
