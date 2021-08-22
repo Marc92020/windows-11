@@ -11,13 +11,25 @@ dragElement(document.getElementById("mydiv2"));
 dragElement(document.getElementById("mydiv3"));
 
 function closediv() {
+   document.getElementById("mydiv").style.transition = ".2s";
    document.getElementById("mydiv").style.opacity = 0;
+setTimeout(function(){
+   document.getElementById("mydiv").style.transition = "null";
+}, 200)
 }
 function closediv2() {
+   document.getElementById("mydiv2").style.transition = ".2s";
    document.getElementById("mydiv2").style.opacity = 0;
+setTimeout(function(){
+   document.getElementById("mydiv2").style.transition = "null";
+}, 200)
 }
 function closediv3() {
-   document.getElementById("mydiv3").style.opacity = 0;
+   document.getElementById("mydiv2").style.transition = ".2s";
+   document.getElementById("mydiv2").style.opacity = 0;
+setTimeout(function(){
+   document.getElementById("mydiv2").style.transition = "null";
+}, 200)
 }
 
 document.getElementById("logoabout_JJ8H").addEventListener("click", function() {
