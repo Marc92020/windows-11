@@ -69,8 +69,6 @@ function store9() {
 function dragElement(elmnt) {
   console.log(elmnt)
   
-  elmnt.style.zLayer = highz + 1;
-  highz = highz + 1;
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
     /* if present, the header is where you move the DIV from:*/
@@ -81,6 +79,7 @@ function dragElement(elmnt) {
   }
 
   function dragMouseDown(e) {
+    elmnt.style.zLayer = elmnt.style.zLayer + 50;
     e = e || window.event;
     e.preventDefault();
     // get the mouse cursor position at startup:
